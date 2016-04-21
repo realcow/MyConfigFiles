@@ -38,6 +38,51 @@ a::#im:
 #import <$end$>
 a::#in:
 #include "$end$"
+readme:
+@realcow
+
+a:#include <algorithm>:inal:
+#include <algorithm>
+readme:
+@realcow
+
+a:#include <boost/:inboo:
+#include <boost/
+readme:
+@realcow
+
+a:#include <iostream>:inio:
+#include <iostream>
+readme:
+@realcow
+
+a:#include <map>:inmap:
+#include <map>
+readme:
+@realcow
+
+a:#include <stdio.h>:instd:
+#include <stdio.h>
+readme:
+@realcow
+
+a:#include <string>:instr:
+#include <string>
+readme:
+@realcow
+
+a:#include <unordered_map>:inumap:
+#include <unordered_map>
+readme:
+@realcow
+
+a:#include <vector>:invec:
+#include <vector>
+readme:
+@realcow
+
+a:#include <windows.h>:inwin:
+#include <windows.h>
 a::#in:
 #include <$end$>
 a::#p:
@@ -47,32 +92,42 @@ a::#u:
 a::bas:
 $BaseClassName$::$MethodName$($MethodArgs$);
 
-
+
+
 a::/*-:
 /*
  *	$end$
- */
+ */
+
 a::/**:
 /************************************************************************/
 /* $end$                                                                     */
-/************************************************************************/
+/************************************************************************/
+
 a:://-:
-// $end$ [$MONTH$/$DAY$/$YEAR$ %USERNAME%]
+// $end$ [$MONTH$/$DAY$/$YEAR$ %USERNAME%]
+
 a::///:
 //////////////////////////////////////////////////////////////////////////
-
+
+
 a::sup:
 __super::$MethodName$($MethodArgs$);
 
-
+
+
 a:_T():tc:
-_T($end$)
+_T($end$)
+
 a:_T(...)::
-_T($selected$)$end$
+_T($selected$)$end$
+
 a::A:
-ASSERT($end$)
+ASSERT($end$)
+
 a::b:
-bool
+bool
+
 a::class:
 class $end$
 {
@@ -92,6 +147,11 @@ protected:
 private:
 };
 
+readme:
+@realcow
+
+a:const std.string&:cstrr:
+const std::string&
 a:DEFINE_GUID:guid:
 // {$GUID_STRING$} 
 DEFINE_GUID($GUID_Name$, 
@@ -249,10 +309,20 @@ a:NULL:N:
 NULL
 a:nullptr:n:
 nullptr
+readme:
+@realcow
+
+a:nullptr:np:
+nullptr
 a::r:
 return
 a:return false;:rf:
 return false;
+readme:
+@realcow
+
+a:return nullptr;:rn:
+return nullptr;
 a:return true;:rt:
 return true;
 readme:
@@ -283,16 +353,19 @@ switch ($end$)
 {
 	$selected$
 }
-
+
+
 a::switch:
 switch ($end$)
 {
 case :
 	break;
 }
-
+
+
 a::TC:
-TCHAR
+TCHAR
+
 a:TRY { ... } CATCH {}:TRY:
 TRY 
 {
@@ -303,7 +376,8 @@ CATCH (CMemoryException, e)
 	$end$
 }
 END_CATCH
-
+
+
 a:try { ... } catch {} catch {} catch {}:try:
 try
 {
@@ -319,25 +393,33 @@ catch (CFileException* e)
 catch (CException* e)
 {
 }
-
+
+
 a::U:
-UINT
+UINT
+
 a::UL:
-ULONG
+ULONG
+
 a::ui:
-unsigned int
+unsigned int
+
 a::ul:
-unsigned long
+unsigned long
+
 a::usi:
 using namespace $end$;
-
+
+
 a:while () { ... }:while:
 while ($end$)
 {
 	$selected$
 }
-
+
+
 a::W:
-WORD
+WORD
+
 a::WP:
 WPARAM
