@@ -14,81 +14,109 @@ a:#if 0 ... #endif:#if:
 #if 0
 $selected$$end$
 #endif
-
+
+
 a:#ifdef ... #endif:#if:
 #ifdef $end$
 $selected$
 #endif
-
+
+
 a:#ifdef guard in a header::
 #ifndef $FILE_BASE$_h__
 #define $FILE_BASE$_h__
 
 $selected$
 #endif // $FILE_BASE$_h__
-
+
+
 a:#ifndef ... #endif:#ifn:
 #ifndef $end$
 $selected$
 #endif
-
+
+
 a::#im:
-#import "$end$"
+#import "$end$"
+
 a::#im:
-#import <$end$>
+#import <$end$>
+
 a::#in:
-#include "$end$"
+#include "$end$"
+
 readme:
 @realcow
-
+
+
 a:#include <algorithm>:inal:
-#include <algorithm>
+#include <algorithm>
+
 readme:
 @realcow
-
+
+
 a:#include <boost/:inboo:
-#include <boost/
+#include <boost/
+
 readme:
 @realcow
-
+
+
 a:#include <iostream>:inio:
-#include <iostream>
+#include <iostream>
+
 readme:
 @realcow
-
+
+
 a:#include <map>:inmap:
-#include <map>
+#include <map>
+
 readme:
 @realcow
-
+
+
 a:#include <stdio.h>:instd:
-#include <stdio.h>
+#include <stdio.h>
+
 readme:
 @realcow
-
+
+
 a:#include <string>:instr:
-#include <string>
+#include <string>
+
 readme:
 @realcow
-
+
+
 a:#include <unordered_map>:inumap:
-#include <unordered_map>
+#include <unordered_map>
+
 readme:
 @realcow
-
+
+
 a:#include <vector>:invec:
-#include <vector>
+#include <vector>
+
 readme:
 @realcow
-
+
+
 a:#include <windows.h>:inwin:
-#include <windows.h>
+#include <windows.h>
+
 a::#in:
-#include <$end$>
+#include <$end$>
+
 a::#p:
-#pragma 
+#pragma 
+
 a::#u:
-#undef 
+#undef 
+
 a::bas:
 $BaseClassName$::$MethodName$($MethodArgs$);
 
@@ -135,7 +163,8 @@ public:
 protected:
 private:
 };
-
+
+
 a:class with prompt for name:class:
 class $Class_name$
 {
@@ -146,23 +175,28 @@ protected:
 	$end$
 private:
 };
-
+
+
 readme:
 @realcow
-
+
+
 a:const std.string&:cstrr:
-const std::string&
+const std::string&
+
 a:DEFINE_GUID:guid:
 // {$GUID_STRING$} 
 DEFINE_GUID($GUID_Name$, 
 $GUID_DEFINITION$);
-
+
+
 a:do { ... } while ():do:
 do 
 {
 	$selected$
 } while ($end$);
-
+
+
 a:Doxygen - Class Comment::
 /*!
  * \class $classname$
@@ -172,7 +206,8 @@ a:Doxygen - Class Comment::
  * \author %USERNAME%
  * \date $MONTHLONGNAME$ $YEAR$
  */
-
+
+
 a:Doxygen - Class Comment (Long)::
 /*!
  * \class $classname$
@@ -193,7 +228,8 @@ a:Doxygen - Class Comment (Long)::
  *
  * Contact: user@company.com
  *
- */
+ */
+
 a:Doxygen - Header Comment::
 /*!
  * \file $FILE_BASE$.$FILE_EXT$
@@ -203,7 +239,8 @@ a:Doxygen - Header Comment::
  *
  * $end$
  */
-
+
+
 a:Doxygen - Header Comment (Long)::
 /*!
  * \file $FILE_BASE$.$FILE_EXT$
@@ -217,64 +254,80 @@ a:Doxygen - Header Comment (Long)::
  * TODO: long description
  *
  * \note
-*/
+*/
+
 a::DW:
-DWORD
+DWORD
+
 a:dynamic cast, run code on valid cast:dyna:
 $New_type$ *$New_pointer$ = dynamic_cast<$New_type$ *>($Cast_this$);
 if (NULL != $New_pointer$)
 {
 	$end$
 }
-
+
+
 a::fl:
-float
+float
+
 a:for () { ... }:for:
 for ($end$)
 {
 	$selected$
 }
-
+
+
 a:for loop forward:forr:
 for (int $Index$ = 0; $Index$ < $Length$ ; $Index$++)
 {
 	$end$
 }
-
+
+
 a:for loop reverse:forr:
 for (int $Index$ = $Length$ - 1; $Index$ >= 0 ; $Index$--)
 {
 	$end$
 }
-
+
+
 a:GUID IMPLEMENT_OLECREATE:guid:
 // {$GUID_STRING$} 
 IMPLEMENT_OLECREATE($GUID_Class$, $GUID_ExternalName$, 
 $GUID_DEFINITION$);
-
+
+
 a:GUID string:guid:
-"{$GUID_STRING$}"
+"{$GUID_STRING$}"
+
 a:GUID struct instance:guid:
 // {$GUID_STRING$} 
 static const GUID $GUID_InstanceName$ = 
 { $GUID_STRUCT$ };
-
+
+
 a::HA:
-HANDLE
+HANDLE
+
 a::HI:
-HINSTANCE
+HINSTANCE
+
 a::HR:
-HRESULT
+HRESULT
+
 a::H:
-HWND
+HWND
+
 a:IDL uuid:uuid:
-uuid($GUID_STRING$)
+uuid($GUID_STRING$)
+
 a:if () { ... }:if:
 if ($end$)
 {
 	$selected$
 }
-
+
+
 a:if () { ... } else { }:if:
 if ($end$)
 {
@@ -283,7 +336,8 @@ if ($end$)
 else
 {
 }
-
+
+
 a:if () { } else { ... }::
 if ($end$)
 {
@@ -292,23 +346,32 @@ else
 {
 	$selected$
 }
-
+
+
 a::ll:
-long long
+long long
+
 a::LP:
-LPARAM
+LPARAM
+
 a::LPB:
-LPBYTE
+LPBYTE
+
 a::LPC:
-LPCTSTR
+LPCTSTR
+
 a::LPT:
-LPTSTR
+LPTSTR
+
 a::LR:
-LRESULT
+LRESULT
+
 a:NULL:N:
-NULL
+NULL
+
 a:nullptr:n:
-nullptr
+nullptr
+
 readme:
 @realcow
 
@@ -316,6 +379,11 @@ a:nullptr:np:
 nullptr
 a::r:
 return
+readme:
+@realcow
+
+a:return 0;:r0:
+return 0;
 a:return false;:rf:
 return false;
 readme:
