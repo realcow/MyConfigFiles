@@ -374,9 +374,11 @@ nullptr
 
 readme:
 @realcow
-
+
+
 a:nullptr:np:
-nullptr
+nullptr
+
 a::r:
 return
 readme:
@@ -391,6 +393,11 @@ readme:
 
 a:return nullptr;:rn:
 return nullptr;
+readme:
+@realcow
+
+a:return ret;:rr:
+return ret;
 a:return true;:rt:
 return true;
 readme:
