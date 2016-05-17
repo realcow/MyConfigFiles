@@ -1,7 +1,16 @@
-a::n0:
+readme:
+@realcow
+
+a:!= 0:n0:
 != 0
-a:!= NULL:NN:
+readme:
+@realcow
+
+a:!= NULL:nn:
 != NULL
+readme:
+@realcow
+
 a:!= nullptr:nn:
 != nullptr
 a::#d:
