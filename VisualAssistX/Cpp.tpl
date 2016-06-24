@@ -320,6 +320,27 @@ if (NULL != $New_pointer$)
 
 a::fl:
 float
+readme:
+@realcow
+
+a:for (int i = 0; i < $end$; i++):forii:
+for (int i = 0; i < $end$; i++)
+{
+}
+readme:
+@realcow
+
+a:for (int j = 0; j < $end$; j++):forij:
+for (int j = 0; j < $end$; j++)
+{
+}
+readme:
+@realcow
+
+a:for (int k = 0; k < $end$; k++):forik:
+for (int k = 0; k < $end$; k++)
+{
+}
 a:for () { ... }:for:
 for ($end$)
 {
@@ -434,6 +455,16 @@ readme:
 
 a:return nullptr;:rn:
 return nullptr;
+readme:
+@realcow
+
+a:return result;:rres:
+return result;
+readme:
+@realcow
+
+a:return ret;:rr:
+return ret;
 a:return true;:rt:
 return true;
 readme:
@@ -459,6 +490,16 @@ public:
 private:
 	static $classname$* instance;
 };
+readme:
+@realcow
+
+a:static_cast<float>:scf:
+static_cast<float>
+readme:
+@realcow
+
+a:static_cast<int>:sci:
+static_cast<int>
 readme:
 @realcow
 
