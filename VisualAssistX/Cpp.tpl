@@ -397,10 +397,35 @@ a:nullptr:n:
 nullptr
 a::r:
 return
+readme:
+@realcow
+
+a:return 0;:r0:
+return 0;
 a:return false;:rf:
 return false;
+readme:
+@realcow
+
+a:return FALSE;:rf:
+return FALSE;
+readme:
+@realcow
+
+a:return NULL;:rn:
+return NULL;
+readme:
+@realcow
+
+a:return nullptr;:rn:
+return nullptr;
 a:return true;:rt:
 return true;
+readme:
+@realcow
+
+a:return TRUE;:rt:
+return TRUE;
 readme:
 Tip: use Create Implementation on "instance" after inserting the snippet.
 
