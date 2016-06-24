@@ -228,6 +228,21 @@ protected:
 private:
 };
 
+readme:
+@realcow
+
+a:const char*:cchp:
+const char*
+readme:
+@realcow
+
+a:const std.string&:cstrr:
+const std::string&
+readme:
+@realcow
+
+a:const std.wstring&:cwstrr:
+const std::wstring&
 a:DEFINE_GUID:guid:
 // {$GUID_STRING$} 
 DEFINE_GUID($GUID_Name$, 
@@ -454,6 +469,16 @@ readme:
 
 a:std.unique_ptr<>:uqp:
 std::unique_ptr<$end$>
+readme:
+@realcow
+
+a:std.vector<std.string>:vecs:
+std::vector<std::string>
+readme:
+@realcow
+
+a:std.vector<>:vec:
+std::vector<$end$>
 a::struct:
 struct $end$ 
 {
