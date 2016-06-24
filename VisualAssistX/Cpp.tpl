@@ -444,6 +444,16 @@ public:
 private:
 	static $classname$* instance;
 };
+readme:
+@realcow
+
+a:std.shared_ptr<>:shp:
+std::shared_ptr<$end$>
+readme:
+@realcow
+
+a:std.unique_ptr<>:uqp:
+std::unique_ptr<$end$>
 a::struct:
 struct $end$ 
 {
