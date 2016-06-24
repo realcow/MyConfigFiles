@@ -502,6 +502,16 @@ unsigned long
 a::usi:
 using namespace $end$;
 
+readme:
+@realcow
+
+a:using namespace boost:usiboo:
+using namespace boost
+readme:
+@realcow
+
+a:using namespace std:usistd:
+using namespace std;
 a:while () { ... }:while:
 while ($end$)
 {
