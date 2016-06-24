@@ -50,8 +50,108 @@ a::#in:
 readme:
 @realcow
 
+a:#include <algorithm>:inal:
+#include <algorithm>
+readme:
+@realcow
+
+a:#include <array>:inarr:
+#include <array>
+readme:
+@realcow
+
+a:#include <boost/:inboo:
+#include <boost/
+readme:
+@realcow
+
+a:#include <cassert>:inass:
+#include <cassert>
+readme:
+@realcow
+
+a:#include <chrono>:inchrono:
+#include <chrono>
+readme:
+@realcow
+
+a:#include <cstdint>:instdint:
+#include <cstdint>
+readme:
+@realcow
+
 a:#include <iostream>:inio:
 #include <iostream>
+readme:
+@realcow
+
+a:#include <limits>:inlim:
+#include <limits>
+readme:
+@realcow
+
+a:#include <list>:inli:
+#include <list>
+readme:
+@realcow
+
+a:#include <map>:inmap:
+#include <map>
+readme:
+@realcow
+
+a:#include <math.h>:inmath:
+#include <math.h>
+readme:
+@realcow
+
+a:#include <memory>:inmem:
+#include <memory>
+readme:
+@realcow
+
+a:#include <optional>:inopt:
+#include <optional>
+readme:
+@realcow
+
+a:#include <queue>:inque:
+#include <queue>
+readme:
+@realcow
+
+a:#include <stack>:insta:
+#include <stack>
+readme:
+@realcow
+
+a:#include <stdio.h>:instd:
+#include <stdio.h>
+readme:
+@realcow
+
+a:#include <string>:instr:
+#include <string>
+readme:
+@realcow
+
+a:#include <thread>:inthr:
+#include <thread>
+readme:
+@realcow
+
+a:#include <unordered_map>:inumap:
+#include <unordered_map>
+readme:
+@realcow
+
+a:#include <vector>:invec:
+#include <vector>
+readme:
+@realcow
+
+a:#include <windows.h>:inwin:
+#include <windows.h>
 a::#in:
 #include <$end$>
 a::#p:
