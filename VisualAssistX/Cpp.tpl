@@ -23,148 +23,201 @@ a:#if 0 ... #endif:#if:
 #if 0
 $selected$$end$
 #endif
-
-
+
+readme:
+VA Snippet used by Surround With #ifdef.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:#ifdef (VA):#if:
+#ifdef $condition=_DEBUG$$end$
+$selected$
+#endif // $condition$
+
 a:#ifdef ... #endif:#if:
 #ifdef $end$
 $selected$
 #endif
-
-
+
 a:#ifdef guard in a header::
 #ifndef $FILE_BASE$_h__
 #define $FILE_BASE$_h__
 
 $selected$
 #endif // $FILE_BASE$_h__
-
-
+
 a:#ifndef ... #endif:#ifn:
 #ifndef $end$
 $selected$
 #endif
-
-
+
 a::#im:
-#import "$end$"
-
+#import "$end$"
 a::#im:
-#import <$end$>
-
+#import <$end$>
 a::#in:
-#include "$end$"
-
+#include "$end$"
 readme:
 @realcow
-
-
+
 a:#include <algorithm>:inal:
-#include <algorithm>
-
+#include <algorithm>
 readme:
 @realcow
-
-
+
+a:#include <array>:inarr:
+#include <array>
+readme:
+@realcow
+
 a:#include <boost/:inboo:
-#include <boost/
-
+#include <boost/
 readme:
 @realcow
-
-
+
+a:#include <cassert>:inass:
+#include <cassert>
+readme:
+@realcow
+
+a:#include <chrono>:inchrono:
+#include <chrono>
+readme:
+@realcow
+
+a:#include <cstdint>:instdint:
+#include <cstdint>
+readme:
+@realcow
+
 a:#include <iostream>:inio:
-#include <iostream>
-
+#include <iostream>
 readme:
 @realcow
-
-
+
+a:#include <limits>:inlim:
+#include <limits>
+readme:
+@realcow
+
+a:#include <list>:inli:
+#include <list>
+readme:
+@realcow
+
 a:#include <map>:inmap:
-#include <map>
-
+#include <map>
 readme:
 @realcow
-
-
+
+a:#include <math.h>:inmath:
+#include <math.h>
+readme:
+@realcow
+
+a:#include <memory>:inmem:
+#include <memory>
+readme:
+@realcow
+
+a:#include <optional>:inopt:
+#include <optional>
+readme:
+@realcow
+
+a:#include <queue>:inque:
+#include <queue>
+readme:
+@realcow
+
+a:#include <stack>:insta:
+#include <stack>
+readme:
+@realcow
+
 a:#include <stdio.h>:instd:
-#include <stdio.h>
-
+#include <stdio.h>
 readme:
 @realcow
-
-
+
 a:#include <string>:instr:
-#include <string>
-
+#include <string>
 readme:
 @realcow
-
-
+
+a:#include <thread>:inthr:
+#include <thread>
+readme:
+@realcow
+
 a:#include <unordered_map>:inumap:
-#include <unordered_map>
-
+#include <unordered_map>
 readme:
 @realcow
-
-
+
 a:#include <vector>:invec:
-#include <vector>
-
+#include <vector>
 readme:
 @realcow
-
-
+
 a:#include <windows.h>:inwin:
-#include <windows.h>
-
+#include <windows.h>
 a::#in:
-#include <$end$>
-
+#include <$end$>
 a::#p:
-#pragma 
-
+#pragma 
+readme:
+VA Snippet used by Surround With #region.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:#region (VA):#r:
+#pragma region $end$$regionName$
+$selected$
+#pragma endregion $regionName$
+
 a::#u:
-#undef 
-
+#undef 
 a::bas:
 $BaseClassName$::$MethodName$($MethodArgs$);
 
-
-
-a::/*-:
-/*
- *	$end$
- */
-
+
+readme:
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:(...)::
+($selected$)
 a::/**:
 /************************************************************************/
 /* $end$                                                                     */
-/************************************************************************/
-
-a:://-:
-// $end$ [$MONTH$/$DAY$/$YEAR$ %USERNAME%]
-
+/************************************************************************/
+a::/*-:
+/*
+ *	$end$
+ */
 a::///:
 //////////////////////////////////////////////////////////////////////////
-
-
+
+a:://-:
+// $end$ [$MONTH$/$DAY$/$YEAR$ %USERNAME%]
+a:_T():tc:
+_T($end$)
+a:_T(...)::
+_T($selected$)$end$
 a::sup:
 __super::$MethodName$($MethodArgs$);
 
-
-
-a:_T():tc:
-_T($end$)
-
-a:_T(...)::
-_T($selected$)$end$
-
+
+readme:
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:{...}::
+{
+	$end$$selected$
+}
+
 a::A:
-ASSERT($end$)
-
+ASSERT($end$)
 a::b:
-bool
-
+bool
 a::class:
 class $end$
 {
@@ -172,8 +225,7 @@ public:
 protected:
 private:
 };
-
-
+
 a:class with prompt for name:class:
 class $Class_name$
 {
@@ -184,28 +236,33 @@ protected:
 	$end$
 private:
 };
-
-
+
 readme:
 @realcow
-
-
+
+a:const char*:cchp:
+const char*
+readme:
+@realcow
+
 a:const std.string&:cstrr:
-const std::string&
-
+const std::string&
+readme:
+@realcow
+
+a:const std.wstring&:cwstrr:
+const std::wstring&
 a:DEFINE_GUID:guid:
 // {$GUID_STRING$} 
 DEFINE_GUID($GUID_Name$, 
 $GUID_DEFINITION$);
-
-
+
 a:do { ... } while ():do:
 do 
 {
 	$selected$
 } while ($end$);
-
-
+
 a:Doxygen - Class Comment::
 /*!
  * \class $classname$
@@ -215,8 +272,7 @@ a:Doxygen - Class Comment::
  * \author %USERNAME%
  * \date $MONTHLONGNAME$ $YEAR$
  */
-
-
+
 a:Doxygen - Class Comment (Long)::
 /*!
  * \class $classname$
@@ -237,8 +293,7 @@ a:Doxygen - Class Comment (Long)::
  *
  * Contact: user@company.com
  *
- */
-
+ */
 a:Doxygen - Header Comment::
 /*!
  * \file $FILE_BASE$.$FILE_EXT$
@@ -248,8 +303,7 @@ a:Doxygen - Header Comment::
  *
  * $end$
  */
-
-
+
 a:Doxygen - Header Comment (Long)::
 /*!
  * \file $FILE_BASE$.$FILE_EXT$
@@ -263,80 +317,85 @@ a:Doxygen - Header Comment (Long)::
  * TODO: long description
  *
  * \note
-*/
-
+*/
 a::DW:
-DWORD
-
+DWORD
 a:dynamic cast, run code on valid cast:dyna:
 $New_type$ *$New_pointer$ = dynamic_cast<$New_type$ *>($Cast_this$);
 if (NULL != $New_pointer$)
 {
 	$end$
 }
-
-
+
 a::fl:
-float
-
+float
+readme:
+@realcow
+
+a:for (int i = 0; i < $end$; i++):forii:
+for (int i = 0; i < $end$; i++)
+{
+}
+readme:
+@realcow
+
+a:for (int j = 0; j < $end$; j++):forij:
+for (int j = 0; j < $end$; j++)
+{
+}
+readme:
+@realcow
+
+a:for (int k = 0; k < $end$; k++):forik:
+for (int k = 0; k < $end$; k++)
+{
+}
 a:for () { ... }:for:
 for ($end$)
 {
 	$selected$
 }
-
-
+
 a:for loop forward:forr:
 for (int $Index$ = 0; $Index$ < $Length$ ; $Index$++)
 {
 	$end$
 }
-
-
+
 a:for loop reverse:forr:
 for (int $Index$ = $Length$ - 1; $Index$ >= 0 ; $Index$--)
 {
 	$end$
 }
-
-
+
 a:GUID IMPLEMENT_OLECREATE:guid:
 // {$GUID_STRING$} 
 IMPLEMENT_OLECREATE($GUID_Class$, $GUID_ExternalName$, 
 $GUID_DEFINITION$);
-
-
+
 a:GUID string:guid:
-"{$GUID_STRING$}"
-
+"{$GUID_STRING$}"
 a:GUID struct instance:guid:
 // {$GUID_STRING$} 
 static const GUID $GUID_InstanceName$ = 
 { $GUID_STRUCT$ };
-
-
+
 a::HA:
-HANDLE
-
+HANDLE
 a::HI:
-HINSTANCE
-
+HINSTANCE
 a::HR:
-HRESULT
-
+HRESULT
 a::H:
-HWND
-
+HWND
 a:IDL uuid:uuid:
-uuid($GUID_STRING$)
-
+uuid($GUID_STRING$)
 a:if () { ... }:if:
 if ($end$)
 {
 	$selected$
 }
-
-
+
 a:if () { ... } else { }:if:
 if ($end$)
 {
@@ -345,8 +404,7 @@ if ($end$)
 else
 {
 }
-
-
+
 a:if () { } else { ... }::
 if ($end$)
 {
@@ -355,36 +413,32 @@ else
 {
 	$selected$
 }
-
-
-a::ll:
-long long
-
-a::LP:
-LPARAM
-
-a::LPB:
-LPBYTE
-
-a::LPC:
-LPCTSTR
-
-a::LPT:
-LPTSTR
-
-a::LR:
-LRESULT
-
-a:NULL:N:
-NULL
-
-a:nullptr:n:
-nullptr
-
-readme:
-@realcow
 
-a:nullptr:np:
+a::ll:
+long long
+a::LP:
+LPARAM
+a::LPB:
+LPBYTE
+a::LPC:
+LPCTSTR
+a::LPT:
+LPTSTR
+a::LR:
+LRESULT
+readme:
+VA Snippet used by Surround With Namespace.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:namespace (VA)::
+namespace $end$
+{
+	$selected$
+}
+
+a:NULL:N:
+NULL
+a:nullptr:n:
 nullptr
 a::r:
 return
@@ -398,10 +452,35 @@ return false;
 readme:
 @realcow
 
+a:return FALSE;:rf:
+return FALSE;
+readme:
+@realcow
+
+a:return NULL;:rn:
+return NULL;
+readme:
+@realcow
+
 a:return nullptr;:rn:
 return nullptr;
+readme:
+@realcow
+
+a:return result;:rres:
+return result;
+readme:
+@realcow
+
+a:return ret;:rr:
+return ret;
 a:return true;:rt:
 return true;
+readme:
+@realcow
+
+a:return TRUE;:rt:
+return TRUE;
 readme:
 Tip: use Create Implementation on "instance" after inserting the snippet.
 
@@ -420,6 +499,36 @@ public:
 private:
 	static $classname$* instance;
 };
+readme:
+@realcow
+
+a:static_cast<float>:scf:
+static_cast<float>
+readme:
+@realcow
+
+a:static_cast<int>:sci:
+static_cast<int>
+readme:
+@realcow
+
+a:std.shared_ptr<>:shp:
+std::shared_ptr<$end$>
+readme:
+@realcow
+
+a:std.unique_ptr<>:uqp:
+std::unique_ptr<$end$>
+readme:
+@realcow
+
+a:std.vector<std.string>:vecs:
+std::vector<std::string>
+readme:
+@realcow
+
+a:std.vector<>:vec:
+std::vector<$end$>
 a::struct:
 struct $end$ 
 {
@@ -428,33 +537,18 @@ struct $end$
 a::switch:
 switch ($end$)
 {
-	$selected$
-}
-
-
-a::switch:
-switch ($end$)
-{
 case :
 	break;
 }
-
-
-a::TC:
-TCHAR
-
-a:TRY { ... } CATCH {}:TRY:
-TRY 
+
+a::switch:
+switch ($end$)
 {
 	$selected$
 }
-CATCH (CMemoryException, e)
-{
-	$end$
-}
-END_CATCH
-
-
+
+a::TC:
+TCHAR
 a:try { ... } catch {} catch {} catch {}:try:
 try
 {
@@ -470,33 +564,322 @@ catch (CFileException* e)
 catch (CException* e)
 {
 }
-
-
+
+a:TRY { ... } CATCH {}:TRY:
+TRY 
+{
+	$selected$
+}
+CATCH (CMemoryException, e)
+{
+	$end$
+}
+END_CATCH
+
 a::U:
-UINT
-
+UINT
 a::UL:
-ULONG
-
+ULONG
 a::ui:
-unsigned int
-
+unsigned int
 a::ul:
-unsigned long
-
+unsigned long
 a::usi:
 using namespace $end$;
-
-
+
+readme:
+@realcow
+
+a:using namespace boost:usiboo:
+using namespace boost
+readme:
+@realcow
+
+a:using namespace std:usistd:
+using namespace std;
 a:while () { ... }:while:
 while ($end$)
 {
 	$selected$
 }
-
-
+
 a::W:
-WORD
-
+WORD
 a::WP:
 WPARAM
+readme:
+VA Snippet used for suggestions of type bool.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:SuggestionsForType bool::
+true
+false
+
+readme:
+VA Snippet used for suggestions of type BOOL.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:SuggestionsForType BOOL::
+TRUE
+FALSE
+
+readme:
+VA Snippet used for suggestions in class definitions.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:SuggestionsForType class::
+public:
+private:
+protected:
+virtual
+void
+bool
+string
+static
+const
+
+readme:
+VA Snippet used for suggestions of type HANDLE.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:SuggestionsForType HANDLE::
+INVALID_HANDLE_VALUE
+NULL
+
+readme:
+VA Snippet used for suggestions of type HRESULT.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:SuggestionsForType HRESULT::
+S_OK
+S_FALSE
+E_FAIL
+E_NOTIMPL
+E_OUTOFMEMORY
+E_INVALIDARG
+E_NOINTERFACE
+E_UNEXPECTED
+
+readme:
+VA Snippet used for suggestions in loops.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:SuggestionsForType loop::
+continue;
+break;
+
+readme:
+VA Snippet used for suggestions in switch statements.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:SuggestionsForType switch::
+case 
+default:
+break;
+
+readme:
+VA Snippet used for suggestions of type VARIANT_BOOL.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:SuggestionsForType VARIANT_BOOL::
+VARIANT_TRUE
+VARIANT_FALSE
+
+readme:
+VA Snippet used for refactoring: Create From Usage.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:Refactor Create From Usage Class::
+$end$class $ClassName$
+{
+public:
+	$ClassName$($ParameterList$) $colon$
+		$MemberInitializationList$
+	{
+	}
+
+	~$ClassName$()
+	{
+	}
+
+protected:
+
+private:
+	$MemberType$			m$MemberName$;
+
+};
+
+readme:
+VA Snippet used for refactoring: Create From Usage.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:Refactor Create From Usage Class (C)::
+$end$struct $ClassName$
+{
+	$ClassName$($ParameterList$)
+	{
+		$InitializeMember$;
+	}
+
+	$MemberType$			m$MemberName$;
+};
+
+readme:
+VA Snippet used for refactoring: Create From Usage.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:Refactor Create From Usage Class (Managed)::
+$end$public ref class $ClassName$
+{
+public:
+	$ClassName$($ParameterList$) $colon$
+		$MemberInitializationList$
+	{
+	}
+
+	~$ClassName$()
+	{
+	}
+
+protected:
+
+private:
+	$MemberType$			m$MemberName$;
+
+};
+
+readme:
+VA Snippet used for refactoring: Create From Usage.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:Refactor Create From Usage Class (Platform)::
+$end$namespace $NamespaceName$
+{
+	public ref class $ClassName$
+	{
+	public:
+		$ClassName$($ParameterList$) $colon$
+			$MemberInitializationList$
+		{
+		}
+
+		~$ClassName$()
+		{
+		}
+
+	protected:
+
+	private:
+		$MemberType$			m$MemberName$;
+
+	};
+}
+
+readme:
+VA Snippet used for refactoring: Create From Usage and Implement Interface.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:Refactor Create From Usage Method Body::
+throw std::logic_error("The method or operation is not implemented.");
+readme:
+VA Snippet used for refactoring: Create From Usage and Implement Interface.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:Refactor Create From Usage Method Body (C)::
+assert(!"The method or operation is not implemented.");
+readme:
+VA Snippet used for refactoring: Create From Usage and Implement Interface.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:Refactor Create From Usage Method Body (Managed)::
+throw gcnew System::NotImplementedException();
+readme:
+VA Snippet used for refactoring: Create From Usage and Implement Interface.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:Refactor Create From Usage Method Body (Platform)::
+throw ref new Platform::NotImplementedException();
+readme:
+VA Snippet used for refactoring: Create File.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:Refactor Create Header File::
+#pragma once
+
+$body$$end$
+
+
+readme:
+VA Snippet used for refactoring: Change Signature, Create Implementation, and Move Implementation to Source File.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:Refactor Create Implementation::
+
+$SymbolType$ $SymbolContext$($ParameterList$) $MethodQualifier$
+{
+	$end$$MethodBody$
+}
+
+
+readme:
+VA Snippet used for Create Implementation refactoring when used on member variables.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:Refactor Create Implementation for Member::
+
+$SymbolType$ $SymbolContext$;
+
+
+readme:
+VA Snippet used for Create Implementation refactoring when used on member variables and the target is a header file.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:Refactor Create Implementation for Member (header file)::
+
+__declspec(selectany) $SymbolType$ $SymbolContext$;
+
+
+readme:
+VA Snippet used for refactoring: Create File.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:Refactor Create Source File::
+#include "$FILE_BASE$.h"
+
+$body$$end$
+
+
+readme:
+VA Snippet used for refactoring.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:Refactor Document Method::
+//************************************
+// Method:    $SymbolName$
+// FullName:  $SymbolContext$
+// Access:    $SymbolVirtual$$SymbolPrivileges$$SymbolStatic$
+// Returns:   $SymbolType$
+// Qualifier: $MethodQualifier$
+// Parameter: $MethodArg$
+//************************************
+
+readme:
+VA Snippet used for refactoring.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:Refactor Encapsulate Field::
+	$end$$SymbolType$ $GeneratedPropertyName$() const { return $SymbolName$; }
+	void $GeneratedPropertyName$($SymbolType$ val) { $SymbolName$ = val; }
+
+readme:
+VA Snippet used for refactoring.
+If you have modified this item, you may delete it to restore the default upon next use.
+
+a:Refactor Extract Method::
+
+$end$$SymbolType$ $SymbolContext$($ParameterList$) $MethodQualifier$
+{
+	$MethodBody$
+}
+
+
