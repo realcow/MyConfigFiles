@@ -80,6 +80,11 @@ a:#include <cstdint>:instdint:
 readme:
 @realcow
 
+a:#include <fstream>:infstr:
+#include <fstream>
+readme:
+@realcow
+
 a:#include <iostream>:inio:
 #include <iostream>
 readme:
@@ -433,6 +438,11 @@ a:nullptr:n:
 nullptr
 a::r:
 return
+readme:
+@realcow
+
+a:return -1;:r-:
+return -1;
 readme:
 @realcow
 
