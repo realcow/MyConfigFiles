@@ -80,32 +80,43 @@ readme:
 @realcow
 
 a:#include <chrono>:inchrono:
-#include <chrono>
+#include <chrono>
+
 readme:
 @realcow
-
+
+
 a:#include <cstdint>:instdint:
-#include <cstdint>
+#include <cstdint>
+
 readme:
 @realcow
-
+
+
 a:#include <fstream>:infstr:
-#include <fstream>
+#include <fstream>
+
 readme:
 @realcow
-
+
+
 a:#include <iostream>:inio:
-#include <iostream>
+#include <iostream>
+
 readme:
 @realcow
-
+
+
 a:#include <limits>:inlim:
-#include <limits>
+#include <limits>
+
 readme:
 @realcow
-
+
+
 a:#include <list>:inli:
-#include <list>
+#include <list>
+
 readme:
 @realcow
 
@@ -126,6 +137,11 @@ readme:
 
 a:#include <optional>:inopt:
 #include <optional>
+readme:
+include a QT header starting by Q
+
+a:#include <Q->:inq:
+#include <Q$selected$>
 readme:
 @realcow
 
@@ -247,6 +263,8 @@ readme:
 
 a:const char*:cchp:
 const char*
+a:const QString&:cqstrr:
+const QString&
 readme:
 @realcow
 
@@ -449,21 +467,28 @@ a::r:
 return
 readme:
 @realcow
-
+
+
 a:return -1;:r-:
-return -1;
+return -1;
+
 readme:
 @realcow
-
+
+
 a:return 0;:r0:
-return 0;
+return 0;
+
 a:return false;:rf:
-return false;
+return false;
+
 readme:
 @realcow
-
+
+
 a:return FALSE;:rf:
-return FALSE;
+return FALSE;
+
 readme:
 @realcow
 
